@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+#this code below contains a function that echos
+#hello world
+
+function hello_world () {
+	echo "Abraham Livinus is saying Hello World !!!"
+}
+hello_world
