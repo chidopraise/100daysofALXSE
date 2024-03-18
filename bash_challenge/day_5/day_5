@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+	# this script contains functions that
+	# prints system information
+	# lists files and directory on the CWD
+	# creates a directory.
+
+	def system_info () {
+		echo 'System Information:'
+		uname -a
+		echo 'Listing Files in current Directory:'
+		ls -al
+
+		echo 'Creating Directory and adding files to it: ....'
+		mkdir 'day_5'
+
+		echo 'DIRECTORY: day_5 has been created Succesfully'
+
+		echo 'Creating file 'day_5' ....'
+		echo 'end' > day_5/day_5
+		echo 'file created'
+		echo 'finished Succesfully'
+	}
