@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+# this Script Contains a function named check_disk
+# check_disk checkes the disk space and the automatically
+# creating a file and inputing the result into that file.
+# finally check_disk count how many words and lines in the
+# file it just created.
+
+function check_disk() {
+	df -h > disk_result
+
+	echo "Number of words in disk_result :"
+	wc -w disk_result
+
+	echo "Number of lines in disk_result :"
+	wc -l disk_result
+}
+
+check_disk
